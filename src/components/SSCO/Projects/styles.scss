@@ -1,0 +1,29 @@
+@import '../../../styles/constants.scss';
+
+
+.projects {
+    &__container {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 30px;
+        align-items: center;
+    }
+    &__head::after {
+        content: "";
+            display: block;
+            margin: auto;
+            width: 30%;
+            height: 1px;
+            background-color: $red;
+    }
+    &__img {
+        max-width: 300px;
+        object-fit: contain;
+    }
+    &__container-head {
+        font-size: 2rem;
+    }
+    &__container-p {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,45 @@
+@import '../../../../styles/constants.scss';
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 360px;
+  line-height: 360px;
+  background: $dark-blue;
+}
+
+.ant-modal {
+  .ant-modal-body {
+    padding: 0;
+  }
+
+  &-footer {
+    display: none;
+  }
+}
+
+  .album {
+    width: 550px;
+    margin: 28px auto;
+    display: flex;
+    box-shadow: 0 0 5px 2px;
+
+    .ant-carousel .slick-slide h3 {
+      color: $white;
+    }
+
+    &__page {
+      height: 400px;
+    }
+
+    &__image {
+      height: 200px;
+      width: 500px;
+    }
+
+    &__title {
+      font-size: 1.3rem;
+      margin-top: 40px;
+      width: 180px;
+      text-align: center;
+    }
+  }

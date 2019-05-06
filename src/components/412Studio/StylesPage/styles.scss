@@ -1,0 +1,31 @@
+@import '../../../styles/constants.scss';
+
+body div.content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.style-block {
+  width: 50%;
+  min-width: 310px;
+  min-height: 940px;
+  margin: 100px auto;
+  display: grid;
+  grid-gap: 0 0;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 310px 310px 310px;
+  grid-template-areas:
+          "a a b b b"
+          "c c c c c "
+          "d d d e e";
+  @media(max-width: 1000px) {
+    grid-template-columns: 100%;
+    grid-template-rows: 310px 310px 310px 310px 310px;
+    grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e";
+  }
+}

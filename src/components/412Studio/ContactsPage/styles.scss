@@ -1,0 +1,55 @@
+@import '../../../styles/constants.scss';
+
+.contacts {
+    width: 40vw;
+    min-height: 300px;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+    border: 1px solid $turquoise;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__imgs {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    &__img {
+        width: 70px;
+    }
+    
+    &__head,
+    &__p {
+        font-size: 20px;
+        color: $black;
+    }
+}
+@media(max-width: 1050px) {
+    .contacts {
+        width: 75vw;
+    }
+}
+
+@media(max-width: 620px) {
+    .contacts {
+        width: 90vw;
+        &__img {
+            width: 65px;
+        }
+        &__head,
+        &__p {
+        font-size: 20px;
+        }
+    }
+}
+
+@media(max-width: 420px) {
+    .contacts {
+        &__p {
+        font-size: 18px;
+        overflow-wrap: break-word;
+        }
+    }
+}

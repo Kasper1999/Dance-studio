@@ -1,0 +1,55 @@
+@import '../../../../styles/constants.scss';
+
+.nav {
+  font-size: 20px;
+  font-family: $fontSansSerif;
+}
+
+@media(max-width: 1250px) {
+  .nav {
+    font-size: 24px;
+  }
+}
+
+ul.nav-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+  li {
+    list-style-type: none;
+    margin: 0;
+    text-transform: uppercase;
+      a {
+        color: $black;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 20px;
+        display: inline-block;
+        font-family: $fontSansSerif;
+      }
+      .active {
+        color: $turquoise;
+      }
+    }
+  }
+
+  @media(max-width: 1050px) {
+    .nav {
+      position: absolute;
+      right: 15px;
+      top: 45px;
+      -webkit-box-shadow: -5px 5px 22px -4px rgba(0,0,0,0.47);
+      -moz-box-shadow: -5px 5px 22px -4px rgba(0,0,0,0.47);
+      box-shadow: -5px 5px 22px -4px rgba(0,0,0,0.47);
+      background-color: $white;
+      order: 3;
+      display: none;
+      z-index: 1000;
+    }
+    ul.nav-list {
+      transition: 1s ease-in;
+      flex-direction: column;
+      margin-right: auto;
+    }
+  }

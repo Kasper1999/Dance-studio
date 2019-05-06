@@ -1,0 +1,56 @@
+@import '../../../../styles/constants.scss';
+
+.button-component {
+  max-width: 765px;
+  font-size: 20px;
+  margin: 20px auto;
+  padding: 20px;
+  border-top: 1.5px solid $turquoise;
+  border-bottom: 1.5px solid $turquoise;
+}
+
+@media(max-width: 580px) {
+  .button-component {
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+
+.button-main-page {
+  display: block;
+  max-width: 615px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+  font: inherit;
+  color: $turquoise;
+  background-color: transparent;
+  border-radius: 44px;
+  border: 1.5px solid $turquoise;
+}
+
+.button-main-page:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.button-main-page:hover, .button-main-page:focus {
+  color: $white;
+  background-color: $turquoise;
+}
+
+.button-main-page:active {
+  color: $white;
+  border: 1.5px solid $turquoise;
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+  &:hover, &:focus {
+    color: $white;
+    background-color: $turquoise;
+  }
+  &:active{
+    color: $white;
+  }
+}

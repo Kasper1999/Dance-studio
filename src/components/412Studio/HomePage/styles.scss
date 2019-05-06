@@ -1,0 +1,136 @@
+@import '../../../styles/constants.scss';
+.main {
+  height: 100vh;
+  &__block {
+    height: 100%;
+    background-image: url('../../../img/mainBackground.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    p,
+    p h1 {
+      font-family: $fontSansSerif;
+    }
+  }
+  @media(max-width: 750px) {
+    &__video {
+      display: none;
+    }
+  }
+  &__frame {
+    width: 98vw;
+    height: 98vh;
+    margin: auto;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+  }
+  &__head {
+    display: inline;
+    font-size: 30px;
+    flex-wrap: nowrap;
+    color: $white;
+  }
+  @media(max-width: 750px) {
+    &__head {
+      color: $white;
+    }
+  }
+  &__text {
+    max-width: 1140px;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    color: $white;
+  }
+  @media(max-width: 750px) {
+    &__text {
+      color: $white;
+    }
+  }
+  @media(max-width: 420px) {
+    &__text {
+      font-size: 24px;
+    }
+  }
+  &__cards{
+    width: 50%;
+    margin: 0 auto;
+    &__row {
+      margin: 0 0 40px 0;
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+
+      div {
+        position: relative;
+        padding: 0 40px 20px 0;
+        transition: .3s ease;
+        
+        p {
+          font-size: 1.7em;
+          z-index: 17;
+        }
+        @media(max-width: 1050px) {
+          p {
+            font-size: 1.5rem;
+          }
+        }
+        &::before {
+          display: none;
+        }
+        &:hover {
+          padding-bottom: 40px;
+          color: $white;
+          &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(106,187,189,0.8) 75%);
+          width: 100%;
+          height: 100%;
+          border-radius: 7px;
+          display: block;
+          }
+        }
+      }
+    }
+    @media(max-width: 750px) {
+      &__row {
+        flex-direction: column;
+        margin: 0 auto;
+      }
+    }
+  }
+  @media(max-width: 1440px) {
+    &__cards {
+      width: 70%;
+    }
+  }
+  @media(max-width: 1050px) {
+    &__cards {
+      width: 85%;
+    }
+  }
+  @media(max-width: 750px) {
+    &__cards {
+      flex-direction: column;
+    }
+  }
+}
+
+@media(max-width: 750px) {
+  .main-card {
+   width: 95% !important;
+   margin-bottom: 30px;
+ }
+}

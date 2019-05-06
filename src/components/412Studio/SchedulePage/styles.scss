@@ -1,0 +1,149 @@
+@import '../../../styles/constants.scss';
+
+body {
+  background-image: url(../../../img/fon.png);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  .schedule_wrapper {
+    max-width: 1128px;
+    margin: auto;
+    .top {
+      max-width: 765px;
+      padding: 30px;
+      margin: 0 auto 100px;
+      border-bottom: 1.5px solid $turquoise;
+      font-size: 25px;
+      text-align: center;
+    }
+    .ant-tabs-tab {
+      display: flex !important;
+      width: 390px !important;
+      height: 90px !important;
+      padding: 0 40px !important;
+      margin: 0 0 -2px 0 !important;
+      border: 1.5px solid $turquoise;
+      border-right: 0.2vw solid $turquoise;
+      text-align: center !important;
+      vertical-align: middle;
+      background-color: $white;
+      color: $turquoise;
+      font-size: 17px;
+      font-weight: 500;
+      align-items: center;
+      justify-content: center;
+      white-space: pre-wrap;
+      &:hover {
+        color: $turquoise !important;
+        background-color: $turquoise-light; // change color
+      }
+      &:last-child {
+        border-bottom: 0.3vw solid $turquoise;
+      }
+    }
+
+    .ant-tabs-tab-active {
+      position: relative;
+      border: none;
+      background-color: $turquoise;
+      color: $white !important;
+      &:hover {
+        color: $white !important;
+        background-color: $turquoise;
+      }
+    }
+
+    .ant-tabs-ink-bar {
+      background-color: transparent !important;
+    }
+
+    span.ant-tabs-tab-next-icon, span.ant-tabs-tab-next, span.ant-tabs-tab-arrow-show {
+      display: none;
+    }
+    .ant-tabs .ant-tabs-left-bar .ant-tabs-nav-container.ant-tabs-nav-container-scrolling, .ant-tabs .ant-tabs-right-bar .ant-tabs-nav-container.ant-tabs-nav-container-scrolling {
+      padding-bottom: 0 !important;
+    }
+
+    .map_element {
+      width: 640px;
+      height: 300px;
+      border: 1px solid $turquoise;
+      margin: 20px 0 0 50px;
+      position: relative;
+        top: 25px;
+      &__maps {
+        box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+        position: relative;
+          bottom: 25px;
+        display: flex;
+        margin: auto;
+        border: none;
+      }
+    }
+
+    .time_img {
+      width: 720px;
+      height: 315px;
+      margin: 150px 0 0 50px;
+    }
+
+    @media(max-width: 1000px) {
+      .ant-tabs-tab {
+        border-right: 2.5px solid $turquoise;
+        &:last-child {
+          border-bottom: 2.5px solid $turquoise;
+        }
+      }
+    }
+    @media(max-width: 1200px) {
+      .ant-tabs-tab {
+        width: 250px !important;
+        font-size: 14px;
+      }
+    }
+    @media(max-width: 1100px) {
+      .map_element, .time_img{
+        margin-left: 20px;
+      }
+    }
+
+    @media(max-width: 1050px) {
+      .map_element {
+        width: 92%;
+        top: 5%;
+        border: none;
+
+        &__maps {
+          width: 95%;
+          bottom: 5%;
+        }
+      }
+
+      @media(max-width: 580px) {
+        .ant-tabs-tab {
+          width: 150px !important;
+          font-size: 9px;
+        }
+      }
+
+      @media(max-width: 350px) {
+        .ant-tabs-tab {
+          width: 100px !important;
+          font-size: 7px;
+        }
+        .map_element {
+          width: 92%;
+          top: 5%;
+
+          &__maps {
+            width: 95%;
+            bottom: 5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+

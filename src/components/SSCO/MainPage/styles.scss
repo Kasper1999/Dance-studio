@@ -1,0 +1,44 @@
+@import '../../../styles/constants.scss';
+
+.width-container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.head {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+@media(max-width: 450px) {
+    .head {
+        font-size: 2rem;
+    }
+}
+
+.btn-container {
+    justify-self: center;
+    min-height: 60px;
+}
+
+.button {
+    margin: auto;
+    background: none;
+    font: inherit;
+    border: 0;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+@media(max-width: 450px) {
+    .button {
+        font-size: 1.5rem;
+    }
+}
+
+.red-text {
+    color: $red;
+}

@@ -1,0 +1,43 @@
+@import '../../../styles/constants.scss';
+
+.merch {
+    &__head::after {
+        content: "";
+            display: block;
+            margin: auto;
+            width: 33%;
+            height: 1px;
+            background-color: $red;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        justify-items: center;
+    }
+    &__img {
+        max-width: 300px;
+    }
+    @media(max-width: 350px) {
+    &__img {
+        max-width: 200px;
+    }
+    }
+    &__text {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .btn-container {
+        text-align: center;
+    }
+    &__button {
+        background-color: $black;
+        color: $white;
+        margin: auto;
+        transition: .3s;
+        &:hover {
+            color: $black;
+            background-color: $white;
+            border: 1px solid $red;
+        }
+    }
+}

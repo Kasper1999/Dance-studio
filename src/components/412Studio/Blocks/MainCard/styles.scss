@@ -1,0 +1,33 @@
+@import '../../../../styles/constants.scss';
+
+@media(max-width: 750px) {
+  div.main__cards div.main__cards__row a.menu-card-link {
+  width: 100% !important;
+  }
+}
+
+.main-card {
+  height: 250px;
+  border-radius: 7px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0 40px 20px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  a {
+    font-family: $fontSansSerif;
+    font-weight: 500;
+    color: $white;
+
+    &:active, &:hover {
+      color: $white;
+    }
+
+    &:visited, &:focus {
+      text-decoration: none;
+    }
+  }
+}

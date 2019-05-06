@@ -1,0 +1,63 @@
+@import '../../../../styles/constants.scss';
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+    .logo {
+        margin-top: 10px;
+        &--left {
+            margin-left: 35px;
+            img {
+                width: 70px;
+                height: 40px;
+            }
+        }
+        &--right {
+            img {
+                width: 50px;
+                height: 40px;
+                margin-right: 35px;
+            }
+        }
+    }
+
+    @media(max-width: 1040px) {
+        .logo--right {
+            display: none;
+        }
+    }
+
+    @media(max-width: 1050px) {
+        .logo--left {
+            justify-self: flex-start;
+            order: 1;
+        }
+    }
+
+    .logo--menu {
+        display: none;
+        }
+
+    @media(max-width: 1050px) {
+        .logo--menu {
+            margin-right: 20px;
+            width: 32px;
+            order: 3;
+            display: initial;
+            align-self: flex-start;
+            cursor: pointer;
+        }
+    }
+
+    .logo--menu--show {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+}
+
+
+
+

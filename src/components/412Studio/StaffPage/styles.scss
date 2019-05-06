@@ -1,0 +1,47 @@
+@import '../../../styles/constants.scss';
+
+.staffPage {
+    max-width: 1137px;
+    margin: auto;
+    h1 {
+        padding-top: 100px;
+        text-align: center;
+        font-size: 100px;
+        font-family: $fontSansSerif;
+        background-image: url(../../../img/StaffAll.jpg);
+        background-position-y: -150px;
+        background-repeat: no-repeat;
+        min-height: 540px;
+        color: $white;
+        background-size: cover;
+        object-fit: cover;
+        text-shadow: 2px 2px 7px grey;
+        border-radius: 15px;
+    }
+    @media(max-width: 810px) {
+        h1 {
+            font-size: 30px;
+        }
+    }
+    @media(max-width: 370px) {
+        h1 {
+            font-size: 30px;
+        }
+    }
+    .staffCard {
+        margin: 15px;
+        border-radius: 5px;
+    }
+    &__img-block {
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url(../../../img/background.png);
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+    @media(max-width: 1164px) {
+        &__img-block {
+            justify-content: space-around;
+        }
+    }
+}

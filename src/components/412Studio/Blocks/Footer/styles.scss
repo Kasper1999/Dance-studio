@@ -1,0 +1,36 @@
+@import '../../../../styles/constants.scss';
+
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: $turquoise;
+  bottom: 0;
+  .circles {
+    width: 320px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .fa-ico {
+      margin: 0 20px;
+      width: 50px;
+      height:  50px;
+      border-radius: 50%;
+      border: 2px solid white;
+      padding: 5px 5.5px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      &:hover {
+        background-color: $white;
+      }
+    }
+    .circles_img {
+      display: block;
+      width: 30px;
+    }
+  }
+}
+
